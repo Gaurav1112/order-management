@@ -9,12 +9,19 @@ It supports full order lifecycle management — creation, tracking, updating, an
 
 src/
 ├── main/java/com/peerisland/orderManagement
+
 │ ├── controller/ # REST Controllers
+
 │ ├── service/ # Business logic
+
 │ ├── model/ # Entities
+
 │ ├── dto/ # Data Transfer Objects
+
 │ ├── repository/ # Spring Data JPA Repositories
+
 │ └── config/ # App configuration
+
 └── test/java/... # Unit & Integration Tests
 
 
