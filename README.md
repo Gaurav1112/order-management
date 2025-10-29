@@ -126,14 +126,18 @@ Every 5 minutes, a scheduler updates all PENDING orders to PROCESSING and logs t
 | Version                                 | Description                                   |
 | --------------------------------------- | --------------------------------------------- |
 | **V1__create_tables.sql**               | Creates base tables (`orders`, `order_items`) |
-| **V2__create_order_status_history.sql** | Adds `order_status_history` table             |
-| **V3__insert_sample_orders.sql**        | Inserts demo records                          |
+| **V3__create_order_status_history.sql** | Adds `order_status_history` table             |
+| **V2__insert_sample_orders.sql**        | Inserts demo records                          |
 
 
 ### 📄 OpenAPI / Swagger Documentation
 
 If using Springdoc OpenAPI:
-implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.8.7</version>
+		</dependency>
 
 | Resource         | URL                                                                            |
 | ---------------- | ------------------------------------------------------------------------------ |
