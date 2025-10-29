@@ -145,3 +145,4 @@ implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
 | **README.md**             | Generated documentation           | Added real URLs, cURL examples, Flyway notes              |
 | **Test Templates**        | Generated basic skeleton          | Expanded assertions and mock setups manually              |
 
+# order-management
