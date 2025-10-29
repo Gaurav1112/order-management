@@ -25,11 +25,16 @@ src/
 | Method | Endpoint | Description |
 |---------|-----------|-------------|
 | **POST** | `/api/orders` | Create a new order |
-| **GET** | `/api/orders/{id}` | Get order details |
-| **GET** | `/api/orders/{id}/history` | View order status history |
-| **POST** | `/api/orders/{id}/cancel` | Cancel an order (if PENDING) |
+| **GET** | `/api/orders/{id}` | Get order details by ID |
+| **PUT** | `/api/orders/{id}/status` | Update order status (e.g., from `PENDING` → `SHIPPED`, `DELIVERED`) — state machine enforced |
+| **GET** | `/api/orders/{id}/status` | Retrieve current status of an order |
+| **POST** | `/api/orders/{id}/cancel` | Cancel an order (allowed only if status is `PENDING`) |
+| **GET** | `/api/orders/{id}/history` | Retrieve complete order status history |
 | **GET** | `/api/orders?status={status}` | List all orders (optionally filtered by status) |
-
+| **GET** | `/api/orders/track/{id}` | Track real-time order progress and current state |
+| **GET** | `/actuator/health` | Check service health (Spring Boot Actuator) |
+| **GET** | `/swagger-ui.html` | OpenAPI/Swagger UI to explore and test endpoints |
+| **GET** | `/h2-console` | Access H2 in-memory database console |
 ---
 
 ## ⚙️ Tech Stack
