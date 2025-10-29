@@ -27,6 +27,6 @@ public class OpenApiConfig {
                     .url("https://springdoc.org")))
             .externalDocs(new ExternalDocumentation()
                 .description("Project README / Documentation")
-                .url("https://github.com/peerisland/order-management"));
+                .url("https://github.com/Gaurav1112/order-management"));
     }
 }
